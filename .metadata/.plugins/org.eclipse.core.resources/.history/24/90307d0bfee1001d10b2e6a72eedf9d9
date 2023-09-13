@@ -1,0 +1,21 @@
+package org.program.domain;
+
+public class BangladeshiTaka extends Currency
+{
+	double bangladeshiTaka;
+	
+	@Override
+	public void currencyConverter() 
+	{
+		this.bangladeshiTaka = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display()
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Bangladeshi_Taka : "+this.bangladeshiTaka);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Bangladeshi_Taka : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

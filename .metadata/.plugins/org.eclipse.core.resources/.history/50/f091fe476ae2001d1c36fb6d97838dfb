@@ -1,0 +1,22 @@
+package org.program.domain;
+
+public class HongKongDollar extends Currency 
+{
+	double hongKongDollar;
+	
+	@Override
+	public String currencyConverter()
+	{
+		this.hongKongDollar = this.getExchangeRates() * this.amount;
+		return "Conversion   : "+this.amount+" "+getCurrencyName()+" to HongKong_Dollar : "+this.hongKongDollar;
+	}
+	
+	@Override
+	public void display() 
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to HongKong_Dollar : "+this.hongKongDollar);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to HongKong_Dollar : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

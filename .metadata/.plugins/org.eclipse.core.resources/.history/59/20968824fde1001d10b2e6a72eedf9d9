@@ -1,0 +1,21 @@
+package org.program.domain;
+
+public class USDoller extends Currency
+{
+	private double usd;
+	
+	@Override
+	public void currencyConverter() 
+	{
+		this.usd = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display()
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to USD : "+this.usd);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to USD : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

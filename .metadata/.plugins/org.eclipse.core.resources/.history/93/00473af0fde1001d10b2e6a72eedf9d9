@@ -1,0 +1,20 @@
+package org.program.domain;
+
+public class SwissFranc extends Currency
+{
+	double swissFranc;
+	
+	@Override
+	public void currencyConverter()
+	{
+		this.swissFranc = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display() 
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Swiss_Franc : "+this.swissFranc);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Swiss_Franc : "+this.getExchangeRates());
+		System.out.println();
+	}}

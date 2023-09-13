@@ -1,0 +1,21 @@
+package org.program.domain;
+
+public class IndonesianRupiah extends Currency
+{
+	private double indonesianRupiah;
+	
+	@Override
+	public void currencyConverter()
+	{
+		this.indonesianRupiah = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display() 
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Indonesian_Rupiah : "+this.indonesianRupiah);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Indonesian_Rupiah : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

@@ -1,0 +1,92 @@
+package org.program.main;
+
+import java.util.ArrayList;
+
+import org.program.util.Converter;
+import org.program.util.CurrencyList;
+
+public class Program
+{
+	public static void main(String[] args)
+	{	
+		CurrencyList list = new CurrencyList();
+		list.setList(new ArrayList<>());
+		Converter converter = new Converter();
+		int choice1;
+		int choice2;
+		while((choice1 = Converter.menuList()) != 0)
+		{
+			if(choice1 >= 0 && choice1 <= 20)
+			{
+				converter.acceptAmount();
+				
+				while((choice2 = Converter.subMenuList()) != 0)
+				{
+					if(choice2 >= 0 && choice2 <= 21)
+					{
+						switch(choice2)
+						{
+							case 1:converter.toRupee(choice1);
+								break;
+							case 2:converter.toUSDollar(choice1);
+								break;
+							case 3:converter.toEuro(choice1);
+								break;
+							case 4:converter.toBritishPound(choice1);
+								break;
+							case 5:converter.toKuwaitiDinar(choice1);
+								break;
+							case 6:converter.toAustralianDollar(choice1);
+								break;
+							case 7:converter.toSwissFreanc(choice1);
+								break;
+							case 8:converter.toGibraltorPound(choice1);
+								break;
+							case 9:converter.toBahrainiDinar(choice1);
+								break;
+							case 10:converter.toOmaniRial(choice1);
+								break;
+							case 11:converter.toSingaporeDollar(choice1);
+								break;
+							case 12:converter.toBangladeshiTaka(choice1);
+								break;
+							case 13:converter.toChineseYuan(choice1);
+								break;
+							case 14:converter.toHongKongDollar(choice1);
+								break;
+							case 15:converter.toTurkishLira(choice1);
+								break;
+							case 16:converter.toIndonesianRupiah(choice1);
+								break;
+							case 17:converter.toJapaneseYen(choice1);
+								break;
+							case 18:converter.toMexicanPeso(choice1);
+								break;
+							case 19:converter.toNewZealandDollar(choice1);
+								break;
+							case 20:converter.toRussianRuble(choice1);
+								break;
+							case 21:list.showRecord();
+								break;
+						}
+						list.addRecents(converter.recent);
+					}
+					else 
+					{
+						System.out.println();
+						System.out.println("Invalid choice !!");
+						System.out.println("Enter choice between 1-20");
+						System.out.println();
+					}
+				}
+			}
+			else 
+			{
+				System.out.println();
+				System.out.println("Invalid choice !!");
+				System.out.println("Enter choice between 1-20");
+				System.out.println();
+			}
+		}
+	}
+}

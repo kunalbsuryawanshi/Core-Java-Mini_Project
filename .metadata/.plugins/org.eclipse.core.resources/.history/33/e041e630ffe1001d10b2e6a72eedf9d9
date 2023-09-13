@@ -1,0 +1,19 @@
+package org.program.util;
+
+import java.util.List;
+import org.program.domain.Currency;
+
+public class CurrencyList 
+{
+	List<Currency> currencyList = null;
+	public void setList(List<Currency> currencyList)
+	{
+		this.currencyList = currencyList;
+	}
+	public void addRecents(String recent) {
+		
+		
+	}
+	
+	
+}

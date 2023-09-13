@@ -1,0 +1,27 @@
+package org.program.util;
+
+import java.util.List;
+
+public class CurrencyList 
+{
+	List<String> currencyList = null;
+	public void setList(List<String> currencyList)
+	{
+		this.currencyList = currencyList;
+	}
+	public void addRecents(String recent)
+	{
+		if(recent != null)
+		this.currencyList.add(recent);
+	}
+	public void showRecord() 
+	{
+		if(this.currencyList.isEmpty())
+			System.out.println("No recent Searches !!");
+		this.currencyList.forEach(System.out::println);
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,22 @@
+package org.program.domain;
+
+public class Rupee extends Currency
+{
+	private double rupee;
+	
+	@Override
+	public String currencyConverter()
+	{
+		this.rupee = this.getExchangeRates() * this.amount;
+		return this.amount+" "+getCurrencyName()+" to INR : "+this.rupee;
+	}
+	
+	@Override
+	public void display()
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to INR : "+this.rupee);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to INR : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

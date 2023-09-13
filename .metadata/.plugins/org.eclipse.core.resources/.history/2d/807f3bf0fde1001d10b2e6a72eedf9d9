@@ -1,0 +1,21 @@
+package org.program.domain;
+
+public class SingaporeDollar extends Currency
+{
+	double singaporeDollar;
+	
+	@Override
+	public void currencyConverter() 
+	{
+		this.singaporeDollar = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display()
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Singapore_Dollar : "+this.singaporeDollar);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Singapore_Dollar : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

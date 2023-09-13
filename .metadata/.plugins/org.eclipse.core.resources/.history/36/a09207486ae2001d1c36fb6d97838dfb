@@ -1,0 +1,22 @@
+package org.program.domain;
+
+public class ChineseYuan extends Currency
+{
+	double chineseYuan;
+	
+	@Override
+	public String currencyConverter()
+	{
+		this.chineseYuan = this.getExchangeRates() * this.amount;
+		return "Conversion   : "+this.amount+" "+getCurrencyName()+" to Chinese_Yuan : "+this.chineseYuan;
+	}
+	
+	@Override
+	public void display() 
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Chinese_Yuan : "+this.chineseYuan);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Chinese_Yuan : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

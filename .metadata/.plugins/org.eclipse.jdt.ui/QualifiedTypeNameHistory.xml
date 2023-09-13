@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.program.domain.Convertor"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="org.program.domain.kuwaitiDinar"/>
+    <fullyQualifiedTypeName name="org.program.main.currency"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="org.program.domain.ZimbabweanDollar"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.ListIterator"/>
+    <fullyQualifiedTypeName name="org.program.domain.Rupee"/>
+    <fullyQualifiedTypeName name="org.program.domain.USDoller"/>
+    <fullyQualifiedTypeName name="org.program.domain.Euro"/>
+    <fullyQualifiedTypeName name="org.program.domain.BritishPound"/>
+    <fullyQualifiedTypeName name="org.program.domain.KuwaitiDinar"/>
+    <fullyQualifiedTypeName name="org.program.domain.AustralianDoller"/>
+    <fullyQualifiedTypeName name="org.program.domain.SwissFranc"/>
+    <fullyQualifiedTypeName name="org.program.domain.GibraltorPound"/>
+    <fullyQualifiedTypeName name="org.program.domain.BahrainiDinar"/>
+    <fullyQualifiedTypeName name="org.program.domain.OmaniRial"/>
+    <fullyQualifiedTypeName name="org.program.domain.SingaporeDollar"/>
+    <fullyQualifiedTypeName name="org.program.domain.BangladeshiTaka"/>
+    <fullyQualifiedTypeName name="org.program.domain.ChineseYuan"/>
+    <fullyQualifiedTypeName name="org.program.domain.HongKongDollar"/>
+    <fullyQualifiedTypeName name="org.program.domain.TurkishLira"/>
+    <fullyQualifiedTypeName name="org.program.util.Convertor"/>
+    <fullyQualifiedTypeName name="org.program.domain.IndonesianRupiah"/>
+    <fullyQualifiedTypeName name="org.program.domain.JapaneseYen"/>
+    <fullyQualifiedTypeName name="org.program.domain.MexicanPeso"/>
+    <fullyQualifiedTypeName name="org.program.domain.NewZealandDollar"/>
+    <fullyQualifiedTypeName name="org.program.domain.RussianRuble"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.program.domain.Currency"/>
+    <fullyQualifiedTypeName name="org.program.util.CurrencyList"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.Currency"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,21 @@
+package org.program.domain;
+
+public class GibraltorPound extends Currency
+{
+	double gibraltorPound;
+	
+	@Override
+	public void currencyConverter()
+	{
+		this.gibraltorPound = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display() 
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Gibraltor_Pound : "+this.gibraltorPound);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Gibraltor_Pound : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

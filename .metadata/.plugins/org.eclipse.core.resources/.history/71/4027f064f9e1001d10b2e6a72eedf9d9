@@ -1,0 +1,5 @@
+package org.program.util;
+
+public class CurrencyList {
+
+}

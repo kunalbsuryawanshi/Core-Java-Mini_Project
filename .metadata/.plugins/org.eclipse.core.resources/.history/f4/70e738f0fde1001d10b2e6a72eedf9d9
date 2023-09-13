@@ -1,0 +1,21 @@
+package org.program.domain;
+
+public class TurkishLira extends Currency
+{
+	double turkishLira;
+	
+	@Override
+	public void currencyConverter()
+	{
+		this.turkishLira = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display() 
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Turkish_Lira : "+this.turkishLira);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Turkish_Lira : "+this.getExchangeRates());
+		System.out.println();
+	}
+}

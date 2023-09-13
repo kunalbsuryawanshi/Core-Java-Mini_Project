@@ -1,0 +1,22 @@
+package org.program.domain;
+
+public class AustralianDoller extends Currency
+{
+	private double australianDoller;
+	
+	@Override
+	public void currencyConverter()
+	{
+		this.australianDoller = this.getExchangeRates() * this.amount;
+	}
+	
+	@Override
+	public void display() 
+	{
+		System.out.println();
+		System.out.println("Conversion   : "+this.amount+" "+getCurrencyName()+" to Australian_Doller : "+this.australianDoller);
+		System.out.println("ExchangeRate : "+getCurrencyName()+" to Australian_Doller : "+this.getExchangeRates());
+		System.out.println();
+		
+	}
+}
